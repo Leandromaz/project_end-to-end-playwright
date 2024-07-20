@@ -21,7 +21,7 @@ export default class CadastroPageTicket extends BasePage {
       .getFirstName()
       .type(faker.name.firstName());
     await this.cadastroElementsTicket.getLastName().type(faker.name.lastName());
-    await this.cadastroElementsTicket.getEmail().type(email@getMaxListeners.com);
+    await this.cadastroElementsTicket.getEmail().type('jhon@gmail.com');
     await this.cadastroElementsTicket.getTicketQuantity().selectOption('2');
     await this.cadastroElementsTicket.getTypeV().check({ force: true });
     await this.cadastroElementsTicket.getFriend().check({ force: true });
